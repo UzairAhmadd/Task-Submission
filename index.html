@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Decision Support System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+   
+</head>
+<body>
+    <!--  Header section Start-->
+
+<div class="header">
+    <div class="brand">
+        <img src="ukdss-logo-white.png" alt="Logo">
+    </div>
+    <div class="actions">
+        <i class="fa fa-bell"></i>
+        <i class="fa fa-search"></i>
+        <i class="fa fa-envelope"></i>
+        <div class="profile">
+            <span>Vivekanand</span>
+            <i class="fa fa-user"></i>
+        </div>
+    </div>
+</div>
+
+<div class="navbar">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#widgets">Widgets</a>
+    <a href="#data">Data</a>
+    <a href="#meeting">Meeting</a>
+    <a href="#tasks1">Tasks</a>
+    <a href="#tasks2">Tasks</a>
+</div>
+<!-- Header Section End -->
+<!-- Main section start-->
+<div class="container">
+        <!-- Review Notice Section -->
+        <div class="card" id="review-notice">
+            <h2>Review Notice</h2><hr>
+            <div class="field">
+                <label>Notice Number:</label>
+                <span id="notice-number">243183000330</span>
+            </div>
+            <div class="field">
+                <label>Notice Date:</label>
+                <span id="notice-date">10/06/2024 18:12:59</span>
+            </div>
+            <div class="field">
+                <label>Checking Date & Time:</label>
+                <span id="checking-date">26/04/2024 15:16:38</span>
+            </div>
+            <div class="field">
+                <label>Checking Location:</label>
+                <span id="checking-location">CG SHAMLI-Bidauli</span>
+            </div>
+            <div class="field">
+                <label>Vehicle Number:</label>
+                <span id="vehicle-number">HR58C8268</span>
+            </div>
+            <div class="field">
+                <label>Name of Owner:</label>
+                <span id="owner-name">LUXMI TRADERS</span>
+            </div>
+            <div class="field">
+                <label>Owner Mobile Number:</label>
+                <span id="owner-mobile">9456889511</span>
+            </div>
+            <div class="field">
+                <label>Driver Mobile Number:</label>
+                <span id="driver-mobile">NA</span>
+            </div>
+            <div class="field">
+                <label>Address of Owner:</label>
+                <span id="owner-address">56/57 SRE ROAD YNR/RK DEGREE, COLLEGE NEAR JHUNJHAN ROAD SHAMLI</span>
+            </div>
+        </div>
+
+        <!-- Offence Details Section -->
+        <div class="card" id="offence-details">
+            <h2>Offence Details</h2><hr>
+            <div class="field">
+                <label>Offence:</label>
+                <span id="offence">No ISTP & No Transit Pass (Other State)</span>
+            </div>
+            <div class="field">
+                <label>Mineral:</label>
+                <span id="mineral">Ordinary sand (Category-I)</span>
+            </div>
+            <div class="field">
+                <label>Transported Volume (m3):</label>
+                <span id="volume">22</span>
+            </div>
+            <div class="field">
+                <label>Royalty (NR):</label>
+                <span id="royalty">65</span>
+            </div>
+            <div class="field">
+                <label>Penalty Amount (NR):</label>
+                <span id="penalty">35780</span>
+            </div>
+            <div class="field">
+                <label>Remarks:</label>
+                <span id="remarks">None</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="danger" id="back-btn">Back</button>
+        <button class="primary" id="print-btn">Print Notice</button>
+        <button class="secondary" id="update-address-btn">Update Owner Address</button>
+        <button class="warning" id="download-evidence-btn">Download Evidence's</button>
+    </div>
+
+    <!-- Update Address Modal -->
+    <div class="modal" id="update-modal">
+        <span class="close" id="close-modal">&times;</span>
+        <h2>Update Owner Address</h2>
+        <input type="text" id="new-address" placeholder="Enter new address">
+        <div class="buttons">
+            <button class="save" id="save-address-btn">Save</button>
+            <button class="cancel" id="cancel-btn">Cancel</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+<!-- Main Section End -->
+<!-- Footer Section -->
+<div class="evid">
+  <div class="bottom">
+    <h2><i class="fa fa-file-text-o"></i> View Evidence's</h2>
+    <div class="evidence-section">
+        <a href="#anpr">ANPR Images</a>
+        <div class="evidence-images">
+            <img src="images/image1.png.jpeg" alt="ANPR Image 1">
+        </div>
+    </div>
+    <div class="evidence-section">
+        <a href="#varifocal">Varifocal Images</a>
+        <div class="evidence-images">
+            <img src="images/image2.png.jpeg" alt="Varifocal Image 1">
+            <img src="images/image3.png.jpeg" alt="Varifocal Image 2">
+            <img src="images/image1.png.jpeg" alt="Varifocal Image 3">
+        </div>
+    </div>
+    <div class="evidence-section">
+        <a href="#varifocal-video">Varifocal Video</a>
+        <div class="evidence-images">
+            <img src="images/image2.png.jpeg" alt="Varifocal Video">
+        </div>
+    </div>
+  </div>
+</div> 
+<div class="footer">
+    <p>Copyright © 2020-21 Decision Support System by Directorate of Geology & Mining, GoUP</p>
+    <p>Powered by <a href="https://margsoft.com" target="_blank">MARGSOFT Technology (P) Ltd.</a></p>
+</div>
+
+<!-- Footer Section -->
+<script src="index.js"></script>
+</body>
+</html>
